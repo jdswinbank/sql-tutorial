@@ -14,7 +14,7 @@ SELECT * FROM people;
 SELECT * FROM people WHERE age = 21;
 SELECT * FROM people ORDER BY age;
 SELECT age FROM people WHERE name = "Bob";
-SELECT name FROM people WHERE age = 20 AND city = "Amsterdam";
+SELECT name FROM people WHERE age = 21 AND city = "Amsterdam";
 SELECT DISTINCT age FROM people;
 SELECT DISTINCT * FROM people;
 
