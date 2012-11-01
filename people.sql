@@ -1,8 +1,13 @@
+-- SQLite formatting
+.mode column
+.header on
+-- End of formatting
+
 CREATE TABLE "people" (
     "name" VARCHAR,
     "age" INTEGER,
     "city" VARCHAR
-);
+); -- Note types of columns
 
 INSERT INTO people (name, age, city) VALUES
     ("Alice", 21, "Amsterdam"),
@@ -130,7 +135,7 @@ SELECT COUNT(people.name), cities.country
 ; -- NB RIGHT and FULL OUTER JOIN not in sqlite
 
 CREATE VIEW population AS
-    SELECT COUNT(people.name), cities.country
+    SELECT COUNT(people.name) AS population, cities.country
         FROM cities LEFT OUTER JOIN people
         ON people.city = cities.id
         GROUP BY cities.country
