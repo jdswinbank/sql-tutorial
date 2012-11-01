@@ -8,8 +8,6 @@ SELECT COUNT(people.name), cities.country
     GROUP BY cities.country
 ;
 
-SELECT "    "; -- whitespace
-
 -- An explicit LEFT OUTER JOIN includes all rows from the table
 -- on the left of the JOIN statement.
 -- RIGHT and FULL OUTER JOINs are conceptually possible, but
@@ -19,8 +17,6 @@ SELECT COUNT(people.name), cities.country
     ON people.city = cities.id
     GROUP BY cities.country
 ;
-
-SELECT "    "; -- whitespace
 
 -- That was a lot of typing, though.
 -- What if we want to look up the population frequently?

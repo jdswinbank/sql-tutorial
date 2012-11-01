@@ -1,3 +1,6 @@
+-- SQLite formatting
+.mode column
+.header on
 PRAGMA foreign_keys = ON; -- Necessary, or sqlite won't enforce them
 
 -- A PRIMARY KEY uniquely identifies an entry in the table
