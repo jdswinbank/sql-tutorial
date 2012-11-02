@@ -1,7 +1,4 @@
--- SQLite formatting
-.mode column
-.header on
-PRAGMA foreign_keys = ON; -- Necessary, or sqlite won't enforce them
+.read sqlite.conf
 
 -- A PRIMARY KEY uniquely identifies an entry in the table
 -- We can't use city names, since we know that Cambridge (for eg) isn't unique,

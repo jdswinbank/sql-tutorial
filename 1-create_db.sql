@@ -1,7 +1,4 @@
--- SQLite formatting
-.mode column
-.header on
--- End of formatting
+.read sqlite.conf
 
 CREATE TABLE "people" (
     "name" VARCHAR,
